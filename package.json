@@ -1,0 +1,29 @@
+{
+  "name": "test-quiz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "start": "node app.js",
+    "db-migrate-up": "npx sequelize-cli db:migrate",
+    "db-migrate-down": "npx sequelize-cli db:migrate:undo",
+    "db-seed-up": "npx sequelize-cli db:seed:all",
+    "db-seed-down": "npx sequelize-cli db:seed:undo:all"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.9.2",
+    "pg": "^8.5.1",
+    "sequelize": "^6.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "sequelize-cli": "^6.2.0"
+  }
+}
